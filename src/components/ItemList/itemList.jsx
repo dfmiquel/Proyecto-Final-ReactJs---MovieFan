@@ -1,4 +1,4 @@
-import { Item } from "../Item/Item";
+import { Item } from "../item/item";
 
 export const ItemList = ({ products }) => {
   return (
@@ -10,7 +10,7 @@ export const ItemList = ({ products }) => {
             id={product.id}
             title={product.title}
             price={product.price}
-            image={product.image}
+            image={product.pictureUrl}
           />
         );
       })}

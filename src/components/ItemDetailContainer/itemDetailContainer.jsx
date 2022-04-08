@@ -1,7 +1,7 @@
-import { ItemCount } from "../ItemCount/ItemCount";
+import { ItemCount } from "../itemCount/itemCount";
 import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
-import { ItemDetail } from "../ItemDetail/ItemDetail";
+import { ItemDetail } from "../itemDetail/itemDetail";
 import { Spinner } from "react-bootstrap";
 import { CartContext } from "../../context/cartContext";
 import { doc, getDoc } from "firebase/firestore";
@@ -48,7 +48,7 @@ export const ItemDetailContainer = () => {
               <ItemDetail item={item} />
             </div>
             <div className="col-4 d-flex justify-content-center align-items-center">
-              <ItemCount stock={12} initial={1} addItem={addItem} item={item} />
+              <ItemCount stock={item.stock} initial={1} addItem={addItem} item={item} />
             </div>
           </div>
         </div>

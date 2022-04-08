@@ -5,12 +5,12 @@ export const ItemDetail = ({ item }) => {
   return (
     <div className="container">
       <h1>{item.title}</h1>
-      <img src={item.image} width="120px" alt="Cargando producto"></img>
+      <img src={item.pictureUrl} width="240px" alt="Cargando Producto"></img>
       <p>{item.description}</p>
       <span>${item.price}</span>
       <div className="gap-3">
         <Link to="/tienda">
-          <Button variant="primary">Volver a la tienda</Button>
+          <Button variant="primary">Volver a la Tienda</Button>
         </Link>
       </div>
       <div>

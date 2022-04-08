@@ -1,4 +1,4 @@
-import "./CartWidget.css";
+import "./cartWidget.css";
 import cart from "../../images/cart.png";
 import { useContext } from "react";
 import { CartContext } from "../../context/cartContext";

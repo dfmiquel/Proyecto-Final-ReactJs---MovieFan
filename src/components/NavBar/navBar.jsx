@@ -1,7 +1,7 @@
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
-import "./NavBar.css";
+import "./navBar.css";
 import logo from "../../images/logo_swirl.svg";
-import { CartWidget } from "../CartWidget/CartWidget";
+import { CartWidget } from "../cartWidget/cartWidget";
 import { Link } from "react-router-dom";
 
 export const NavBar = () => {
@@ -16,7 +16,7 @@ export const NavBar = () => {
             className="d-inline-block align-top"
             alt="React Bootstrap logo"
           />
-          VulcanoSHOP
+          MovieFan
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -25,16 +25,16 @@ export const NavBar = () => {
               <NavDropdown.Item as={Link} to="/tienda">
                 Catalogo completo
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/category/men's clothing">
+              <NavDropdown.Item as={Link} to="/category/clothing">
                 Ropa Hombre
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/category/women's clothing">
+              <NavDropdown.Item as={Link} to="/category/posters">
                 Ropa Mujer
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/category/electronics">
+              <NavDropdown.Item as={Link} to="/category/comics">
                 Electrónica
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/category/jewelery">
+              <NavDropdown.Item as={Link} to="/category/toys">
                 Joyas
               </NavDropdown.Item>
             </NavDropdown>
