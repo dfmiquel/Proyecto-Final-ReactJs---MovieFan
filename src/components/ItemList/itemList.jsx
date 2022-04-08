@@ -11,6 +11,7 @@ export const ItemList = ({ products }) => {
             title={product.title}
             price={product.price}
             image={product.pictureUrl}
+            description={product.description}
           />
         );
       })}
