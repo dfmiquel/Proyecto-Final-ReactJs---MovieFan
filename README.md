@@ -20,7 +20,7 @@
 ### Como iniciar el proyecto
 
 ```
-git clone https://github.com/mfdiaza/vulcanoshop.git
+git clone https://github.com/dfmiquel/Proyecto-Final-ReactJs---MovieFan
 cd vulcanoshop
 npm install
 npm start
