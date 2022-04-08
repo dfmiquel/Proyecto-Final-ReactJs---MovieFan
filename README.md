@@ -21,7 +21,7 @@
 
 ```
 git clone https://github.com/dfmiquel/Proyecto-Final-ReactJs---MovieFan
-cd vulcanoshop
+cd Proyecto Final ReactJs -  MovieFan
 npm install
 npm start
 ```
