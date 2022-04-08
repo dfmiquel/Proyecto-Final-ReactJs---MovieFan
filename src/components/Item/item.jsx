@@ -7,7 +7,7 @@ export const Item = ({ id, title, price, image, description}) => {
   return (
 
     <Card
-    style={{ maxWidth: 360 }}
+    style={{ maxWidth: 240 }}
     title={
         <Card.Meta 
             title={title} 
