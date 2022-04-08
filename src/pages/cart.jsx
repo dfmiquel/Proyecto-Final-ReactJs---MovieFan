@@ -3,7 +3,7 @@ import { CartContext } from "../context/cartContext";
 import { Table, Button, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./styles.css";
-import emptyCart from "../images/empty-cart.svg";
+import emptyCart from "../images/empty-cart.jpg";
 
 export const Cart = () => {
   const { items, removeItem, clear, total } = useContext(CartContext);

@@ -26,16 +26,16 @@ export const NavBar = () => {
                 Catalogo completo
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/category/clothing">
-                Ropa Hombre
+                Ropa
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/category/posters">
-                Ropa Mujer
+                Posters
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/category/comics">
-                Electrónica
+                Comics
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/category/toys">
-                Joyas
+                Juguetes
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/cart">

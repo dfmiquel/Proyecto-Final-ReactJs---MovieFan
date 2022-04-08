@@ -1,5 +1,5 @@
 import "./cartWidget.css";
-import cart from "../../images/cart.png";
+import cart from "../../images/cart.svg";
 import { useContext } from "react";
 import { CartContext } from "../../context/cartContext";
 import { Badge } from "react-bootstrap";
