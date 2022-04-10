@@ -18,7 +18,7 @@ function App() {
             exact
             path="/"
             element={
-              <ItemListContainer greeting={"Bienvenido a MovieFan"} />
+              <ItemListContainer greeting={"Bienvenidos a MovieFan"} />
             }
           />
           <Route exact path="/cart" element={<Cart />} />

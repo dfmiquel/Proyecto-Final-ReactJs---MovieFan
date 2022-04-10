@@ -12,7 +12,7 @@ export const CartWidget = () => {
       <div className="container">
         <ul>
           <li>
-            <img src={cart} alt="Logo" height="48" className="carrito" />
+            <img src={cart} alt="Logo" class="navbar-brand p0 pull-right" className="carrito" />
           </li>
         </ul>
       </div>

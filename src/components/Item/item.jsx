@@ -3,47 +3,45 @@ import { Card, Avatar, Space, Button, Typography } from '@douyinfe/semi-ui';
 import { Link } from "react-router-dom";
 import "./item.css";
 
-export const Item = ({ id, title, price, image, description}) => {
+export const Item = ({ id, title, price, image, description }) => {
   return (
 
-    <Card
-    style={{ maxWidth: 240 }}
-    title={
-        <Card.Meta 
-            title={title} 
+    <div className='cardContainer'>
+      <Card className='card-body'
+        style={{ maxWidth: 360 }}
+        title={
+          <Card.Meta
+            title={title}
             avatar={
-                <Avatar 
-                    alt='Card meta img'
-                    size="default"
-                    src={image}
-                />
+              <Avatar
+                alt='Card meta img'
+                size="default"
+                src={image}
+              />
             }
-        />
-    }
-    headerExtraContent={
-        <Typography.Text link>
-            More
-        </Typography.Text>
-    }
-    cover={ 
-        <img 
-            alt={title} 
+          />
+        }
+        cover={
+          <img className='card-img-top' variant="top"
+            alt={title}
             src={image}
-        />
-    }
-    footerLine={ true }
-    footerStyle={{ display: 'flex', justifyContent: 'flex-end' }}
-    footer={
-        <Space>
-          <Link to={`/item/${id}`}>
-            {/* <Button theme='borderless' type='primary'>Featured Case</Button> */}
-            <Button theme='solid' type='primary'>Ver mas detalles</Button>
-          </Link>
-        </Space>
-    }
->
-    {description} 
-</Card>
+          />
+        }
+        footerLine={true}
+        footerStyle={{ display: 'flex', justifyContent: 'flex-end' }}
+        footer={
+          <Space>
+            <Link to={`/item/${id}`}>
+              {/* <Button theme='borderless' type='primary'>Featured Case</Button> */}
+              <Button theme='solid' type='primary'>Ver más detalles</Button>
+            </Link>
+          </Space>
+        }
+      >
+        <label className='label'>{description}</label>
+        {/* <Typography.Text mark strong size='normal'>{description}</Typography.Text> */}
+      </Card>
+    </div>
 
 
 

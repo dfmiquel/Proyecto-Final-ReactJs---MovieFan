@@ -17,6 +17,7 @@
   /* justify-content: center; */
   display: inline;
   align-items: center;
+  margin-top: 0.5rem;
 }
 .card-img-top {
   height: 180px;
@@ -28,4 +29,16 @@
 .cardContainer:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.label {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(12, 236, 225);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  vertical-align: bottom;
 }

@@ -1,7 +1,13 @@
 ul li {
   list-style-type: none;
-  display: inline-block;
+  display: flex;
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+
+ul li img{
+  height: 48px;
+  align-items: flex-end;
+  
 }
