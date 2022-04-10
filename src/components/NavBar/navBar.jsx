@@ -16,7 +16,7 @@ export const NavBar = () => {
             className="d-inline-block align-center"
             alt="React Bootstrap logo"
           />
-          MovieFan
+          {/* MovieFan */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
