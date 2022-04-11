@@ -11,6 +11,7 @@
 | Modulo | Version | URL |
 | ----------- | ----------- | ----------- |
 | react-bootstrap | 2.1.2 | https://react-bootstrap.github.io/ |
+| semi-design | 2.8.0 | https://semi.design/en-US |
 | react-router-dom | 6.2.1 | https://reactrouter.com/docs/en/v6 |
 | firebase | 9.6.5 | https://firebase.google.com |
 | sweetalert2 | 11.4.0 | https://sweetalert2.github.io/ |
