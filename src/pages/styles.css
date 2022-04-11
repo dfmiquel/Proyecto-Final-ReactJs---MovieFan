@@ -9,6 +9,21 @@
   width: 25%;
 }
 
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 45%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

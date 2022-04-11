@@ -23,8 +23,8 @@ export const CartWidget = () => {
         <ul>
           <li>
             <img src={cart} alt="Logo" height="48" className="carrito" />
-            <Badge pill bg="secondary">
-              {conteo}
+            <Badge pill bg="danger">
+              <span>{conteo}</span>
             </Badge>
           </li>
         </ul>

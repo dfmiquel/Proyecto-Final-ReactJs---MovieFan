@@ -55,8 +55,8 @@ export const ItemListContainer = ({ greeting }) => {
       </div>
       {isLoading ? (
         <div className="loader">
-          <Spinner animation="grow" variant="secondary" role="status"></Spinner>
-          <h1>Cargando productos...</h1>
+          <Spinner animation="border" variant="success" role="status" size="lg"></Spinner>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;Cargando Productos...</h2>
         </div>
       ) : error ? (
         <p>Error: {error}</p>

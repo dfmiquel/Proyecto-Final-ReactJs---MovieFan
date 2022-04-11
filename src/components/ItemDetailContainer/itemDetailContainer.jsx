@@ -36,8 +36,8 @@ export const ItemDetailContainer = () => {
     <>
       {isLoading ? (
         <div className="loader">
-          <Spinner animation="grow" variant="secondary" role="status"></Spinner>
-          <h1>Cargando producto...</h1>
+          <Spinner animation="border" variant="success" role="status" size=""></Spinner>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cargando Producto...</h2>
         </div>
       ) : error ? (
         <p>Error: {error}</p>
