@@ -3,6 +3,7 @@ import "./app.css";
 import { NavBar } from "./components/navBar/navBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Cart } from "./pages/cart";
+import { Footer } from "./components/footer/footer";
 import { ItemListContainer } from "./components/itemListContainer/itemListContainer";
 import { ItemDetailContainer } from "./components/itemDetailContainer/itemDetailContainer";
 import { CartProvider } from "./context/cartContext";
@@ -53,6 +54,7 @@ function App() {
             element={<Error />}
           />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </CartProvider>
   );
