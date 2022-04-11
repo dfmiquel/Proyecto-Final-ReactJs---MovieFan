@@ -43,7 +43,7 @@ export const ItemDetailContainer = () => {
         <p>Error: {error}</p>
       ) : item ? (
         <div className="container">
-          <div className="row">
+          <div className="column">
             <div className="col-8">
               <ItemDetail item={item} />
             </div>

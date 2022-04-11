@@ -33,7 +33,7 @@ export const Item = ({ id, title, price, image, description }) => {
           <Space>
             <Link to={`/item/${id}`}>
               {/* <Button theme='borderless' type='primary'>Featured Case</Button> */}
-              <Button theme='solid' type='primary'>Ver más detalles</Button>
+              <Button theme='solid' type='primary'>Ver ms detalles</Button>
             </Link>
           </Space>
         }
