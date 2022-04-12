@@ -19,7 +19,7 @@ export const ItemDetailContainer = () => {
       setIsLoading(true);
       const docRef = doc(db, "items", productID);
       const docSnap = await getDoc(docRef)
-      const result = {id: docSnap.id, ...docSnap.data()}
+      const result = { id: docSnap.id, ...docSnap.data() }
       setItem(result);
     } catch (error) {
       setError(error);
@@ -47,9 +47,9 @@ export const ItemDetailContainer = () => {
             <div className="col-8">
               <ItemDetail item={item} />
             </div>
-            <div className="col-4 d-flex justify-content-center align-items-center">
-              <ItemCount stock={item.stock} initial={1} addItem={addItem} item={item} />
-            </div>
+          </div>
+          <div className="col-4 d-flex justify-content-center align-items-center">
+            <ItemCount stock={item.stock} initial={1} addItem={addItem} item={item} />
           </div>
         </div>
       ) : (

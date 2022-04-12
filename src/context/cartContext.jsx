@@ -23,7 +23,7 @@ export const CartProvider = ({ children }) => {
         )
       : setItems([
           ...items,
-          { id: item.id, idprod: item.idprod, name: item.title, price: item.price, qty: qty },
+          { id: item.id, idprod: item.idprod, name: item.title, price: item.price, qty: qty, description: item.description, image: item.image  },
         ]);
 
     const sumItem = item.price * qty;

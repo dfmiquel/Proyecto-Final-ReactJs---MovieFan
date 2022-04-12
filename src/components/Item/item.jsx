@@ -8,7 +8,7 @@ export const Item = ({ id, title, price, image, description }) => {
 
     <div className='cardContainer'>
       <Card className='card-body'
-        style={{ maxWidth: 360 }}
+        style={{ maxWidth: 380 }}
         title={
           <Card.Meta
             title={title}

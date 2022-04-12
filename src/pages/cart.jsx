@@ -24,21 +24,21 @@ export const Cart = () => {
   } else {
     return (
       <>
-        <Table striped bordered hover>
+        <Table striped bordered hover >
           <thead>
             <tr>
-              <th>#</th>
-              <th>Item</th>
-              <th>Precio unitario</th>
-              <th>Subtotal</th>
-              <th>Acción</th>
+              <th TableHeaderColumn width={'10%'}>Unidades</th>
+              <th TableHeaderColumn width={'30%'}>Item</th>
+              <th TableHeaderColumn width={'12%'}>Precio unitario</th>
+              <th TableHeaderColumn width={'12%'}>Subtotal</th>
+              <th >Acción</th>
             </tr>
           </thead>
           <tbody>
             {items.map((item) => (
               <tr key={item.id}>
                 <td>{item.qty}</td>
-                <td>{item.name}</td>
+                <td>{item.description}</td>
                 <td>${item.price}</td>
                 <td>${(item.price * item.qty).toFixed(2)}</td>
                 <td>

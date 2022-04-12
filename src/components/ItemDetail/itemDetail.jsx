@@ -6,7 +6,7 @@ export const ItemDetail = ({ item }) => {
   return (
     <div className="cardContainer">
       <Card className='card-body'
-        style={{ maxWidth: 450 }}
+        style={{ maxWidth: 360 }}
         title={
           <Card.Meta
             title={item.description}
@@ -18,7 +18,7 @@ export const ItemDetail = ({ item }) => {
             src={item.pictureUrl}
           />
         }
-        footerLine={false}
+        footerLine={true}
         footerStyle={{ display: 'flex', justifyContent: 'flex-end' }}
         footer={
           <Space>
