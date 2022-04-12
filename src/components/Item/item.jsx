@@ -42,19 +42,5 @@ export const Item = ({ id, title, price, image, description }) => {
         {/* <Typography.Text mark strong size='normal'>{description}</Typography.Text> */}
       </Card>
     </div>
-
-
-
-
-
-    // <Card className="cardContainer">
-    //   <Card.Img variant="top" src={image} />
-    //   <Card.Body>
-    //     <Card.Title>{title}</Card.Title>
-    //     <Link to={`/item/${id}`}>
-    //       <Button variant="primary">Ver mas detalles</Button>
-    //     </Link>
-    //   </Card.Body>
-    // </Card>
   );
 };

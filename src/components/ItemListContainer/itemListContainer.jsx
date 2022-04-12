@@ -67,9 +67,9 @@ export const ItemListContainer = ({ greeting }) => {
         </div>
       ) : (
         <div className="emptyCart">
-                    <img src={empty} className="emptyCartEmpty" />
+          <img src={empty} className="emptyCartEmpty" />
 
-                    </div>
+        </div>
       )}
     </>
   );

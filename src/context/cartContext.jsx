@@ -1,7 +1,6 @@
 import React, { createContext, useState } from "react";
 
-export const CartContext = createContext([]);
-
+export const CartContext = createContext([])
 export const CartProvider = ({ children }) => {
   const [items, setItems] = useState([]);
   const [total, setTotal] = useState(0);
@@ -14,17 +13,17 @@ export const CartProvider = ({ children }) => {
   const addItem = (item, qty) => {
     isInCart(item.id)
       ? setItems(
-          items.map((producto) => {
-            if (producto.id === item.id) {
-              producto.qty += qty
-            }
-            return producto;
-          })
-        )
+        items.map((producto) => {
+          if (producto.id === item.id) {
+            producto.qty += qty
+          }
+          return producto;
+        })
+      )
       : setItems([
-          ...items,
-          { id: item.id, idprod: item.idprod, name: item.title, price: item.price, qty: qty, description: item.description, image: item.image  },
-        ]);
+        ...items,
+        { id: item.id, idprod: item.idprod, name: item.title, price: item.price, qty: qty, description: item.description, image: item.pictureUrl, stock: item.stock },
+      ]);
 
     const sumItem = item.price * qty;
     setTotal(total + sumItem);
@@ -32,7 +31,7 @@ export const CartProvider = ({ children }) => {
 
   const removeItem = (id, qty, price) => {
     setItems(items.filter(item => item.id !== id))
-    
+
     const restItem = qty * price;
     setTotal(total - restItem);
   };

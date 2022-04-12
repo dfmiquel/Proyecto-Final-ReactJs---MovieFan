@@ -27,7 +27,7 @@ export const ItemCount = ({ stock, initial, item }) => {
     <div>
       {add ? (
         <Stack gap={2} className="mx-auto">
-          { count === 1 ? <Badge bg="secondary">Sumaste {count} producto al carrito!</Badge> : <Badge bg="secondary">Sumaste {count} productos al carrito!</Badge>}
+          {count === 1 ? <Badge bg="secondary">Sumaste {count} producto al carrito!</Badge> : <Badge bg="secondary">Sumaste {count} productos al carrito!</Badge>}
           <Link to={`/cart`}>
             <Button variant="success">Finalizar compra</Button>
           </Link>

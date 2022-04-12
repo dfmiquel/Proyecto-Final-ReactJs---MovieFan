@@ -46,10 +46,12 @@ export const Order = () => {
           title: item.name,
           price: item.price,
           quantity: item.qty,
+          stock: item.stock,
         })),
       };
       try {
         const docRef = await addDoc(collection(db, "buyer"), newOrder);
+        // const docRef2 = await updateDoc(collection(db, "items"), newOrder2);
         const MySwal = withReactContent(Swal);
         MySwal.fire({
           didOpen: () => {
@@ -60,14 +62,14 @@ export const Order = () => {
             icon: "success",
             title: (
               <>
-                <p>Compra realizada!</p> <p>ID de seguimiento: {docRef.id}</p>
+                <p>Orden de Compra Exitosa</p> <p>ID de seguimiento: {docRef.id}</p>
               </>
             ),
           });
         });
         clear();
       } catch (error) {
-        <p>Se produjo un error: {error}</p>;
+        <p>Hubo un Error: {error}</p>;
       }
     }
   };
@@ -77,6 +79,7 @@ export const Order = () => {
       <Form.Group className="mb-3" controlId="ControlTextarea1">
         <Form.Label>Nombre</Form.Label>
         <Form.Control
+          size="normal"
           type="text"
           placeholder="Ingrese su nombre y apellido"
           value={buyer.name}
@@ -87,6 +90,7 @@ export const Order = () => {
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control
+          size="normal"
           type="email"
           name="email"
           placeholder="Ingrese su email"
@@ -95,17 +99,18 @@ export const Order = () => {
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="ControlTextarea1">
-        <Form.Label>Telefono</Form.Label>
+        <Form.Label>Teléfono</Form.Label>
         <Form.Control
+          size="normal"
           type="number"
-          placeholder="Telefono"
+          placeholder="Ingrese Nro de Teléfono"
           name="phone"
           value={buyer.phone}
           onChange={handleChange}
         />
       </Form.Group>
       <Button variant="primary" type="submit">
-        Submit
+        Enviar
       </Button>
     </Form>
   );

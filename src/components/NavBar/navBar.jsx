@@ -2,9 +2,7 @@ import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import "./navBar.css";
 import logo from "../../images/MovieFan_Logo.webp";
 import { CartWidget } from "../cartWidget/cartWidget";
-import { Link } from "react-router-dom";
-// import { Avatar, Dropdown,Icon } from '@douyinfe/semi-ui';
-// import { IconStar, IconUser,IconUserGroup, IconSetting, IconEdit,IconHomeStroked } from '@douyinfe/semi-icons';
+import { Link } from "react-router-dom"
 
 export const NavBar = () => {
   return (

@@ -14,7 +14,7 @@ export const Cart = () => {
           <p>
             <strong>El carrito está vacío!</strong>
           </p>
-          <img src={emptyCart} className="emptyCartEmpty" />
+          <img src={emptyCart} className="emptyCartEmpty" alt="emptyCart" />
           <Link to="/tienda">
             <Button variant="primary">Volver a la tienda</Button>
           </Link>
